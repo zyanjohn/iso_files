@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mason Bootstrap 4.0 Theme</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">     
+    <link rel="stylesheet" href="css/bootstrap.min.css">                             
+    <link rel="stylesheet" href="css/tooplate-style.css">                           
+
+
+      </head>
+
+      <body>
+        <div class="container-fluid">
+            <div class="tm-body">
+                <div class="tm-sidebar sticky">  <!--to make side bar sticky-->
+                    <section id="welcome" class="tm-content-box tm-banner margin-b-15">
+                        <div class="tm-banner-inner">
+                            <i class="fa fa-film fa-4x margin-b-40"></i>
+                            <h1 class="tm-banner-title">PROFILE</h1>
+                            <p class="tm-banner-subtitle">Welcome to Techz</p>                   
+                        </div>                    
+                    </section>
+                    <nav class="tm-main-nav">   <!--side navigation bar-->
+                        <ul class="tm-main-nav-ul">
+                            <li class="tm-nav-item"><a href="index.html" class="tm-nav-item-link tm-button active">Gallery</a>
+                            </li>
+                            <li class="tm-nav-item"><a href="timeline.html" class="tm-nav-item-link tm-button">Timeline</a>
+                            </li>
+                            <li class="tm-nav-item"><a href="about.html" class="tm-nav-item-link tm-button">About</a>
+                            </li>
+                            <li class="tm-nav-item"><a href="contact.html" class="tm-nav-item-link tm-button">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--making gallery-->
+                <div class="tm-main-content tm-gallery-container">                    
+                    <div class="grid">                                                    
+                        <div class="grid-item"><img src="img/gallery-img-23-01.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-01.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-12-01.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-02.jpg" alt="Image"></div>                        
+                        <div class="grid-item"><img src="img/gallery-img-12-02.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-23-02.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-03.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-23-03.jpg" alt="Image"></div>                        
+                        <div class="grid-item"><img src="img/gallery-img-11-04.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-05.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-12-03.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-12-04.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-06.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-23-04.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-11-07.jpg" alt="Image"></div>
+                        <div class="grid-item"><img src="img/gallery-img-23-05.jpg" alt="Image"></div>
+                    </div>                    
+                </div> 
+            </div>
+
+            <footer class="tm-footer text-right">
+                <p>Copyright &copy; <span class="tm-current-year">2023</span> Techz
+                
+                - Designed by Synnefo</p>
+            </footer> 
+
+        </div> 
+        
+       
+        
+        <script src="js/jquery-1.11.3.min.js"></script>             
+        <script src="js/imagesloaded.pkgd.min.js"></script> 
+        <script src="js/masonry.pkgd.min.js"></script> 
+        
+   
+        <script>  
+    
+        $(document).ready(function(){
+
+          
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                isFitWidth: true,
+                columnWidth: 1
+            });
+            
+        });
+
+        </script>
+    </body>
+    </html>
